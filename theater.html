@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="@ahmadalimuddin, @singgihprasetyo, @ilafirsta, @radeenisuum">
+	<meta name="keywords" content="Waroeng Kita, terbaru dan terbesar di Indonesia. Siap memanjakan penjual dan pembeli dengan berbagai kebutuhan yang diinginkan. " />
+    <title>WaroengKita | IT Fest UNJ 2016</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+   	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<!-- Start header-->
+	<header id="header">
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+					</div>
+
+					<div class="col-sm-7">
+						<div class="search_box pull-left col-sm-12">
+							<input type="text" style="width: 100%; border-bottom: 1px solid #218ACB;" placeholder="Cari Produk atau Barang"/>
+						</div>
+					</div>
+
+					<div class="col-sm-2">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="masuk.html" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i>Masuk</a></li>
+								<li><a href="daftar.html" data-toggle="modal" data-target="#signup"><i class="fa fa-user"></i>Daftar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Masuk -->
+	  	<div class="modal fade" id="myModal" role="dialog">
+	    	<div class="modal-dialog ">
+	    
+		      	<!-- Modal content-->
+		      	<div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          		<h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Masuk</h3>
+		        	</div>
+		      		<div class="modal-body">     
+				      	<form method="POST"> 
+				        	<div class="row">
+				          		<div class="col-sm-6">
+				            		<div class="input-field">
+				              			<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:35px;margin-top:25px" type="text" name="user" placeholder="Username" required autofocus>
+			            			</div>
+			            			<div class="input-field">
+			              				<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:25px" type="password" name="pass" placeholder="Password" required> 
+			            			</div>
+			            			<a style="font-size:11px;margin-bottom:25px" class="modal-trigger modal-close text-blue forgot-password" href="#">Lupa kata sandi ?</a>
+			             			<div class="input-field col-sm-6">
+			              				<button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Masuk</button>
+			            			</div>
+			          			</div>
+			          			<div class="col-sm-6">
+			            			<a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>   Masuk Dengan Facebook</a>
+			             			<a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-google-plus" aria-hidden="true"></i>   Masuk Dengan Google</a>
+			             			
+			             			<div style="margin-left:5px"> Belum punya akun ?</div>
+			             			
+			             			<a type="button"  data-toggle="modal" data-dismiss="modal" data-target="#signup" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-6" href="signup.html">Daftar</a>
+			          			</div>
+			        		</div>
+			      		</form> 
+		      		</div>
+		     	</div>  
+		    </div>
+	  	</div>
+
+	  	<!-- Modal Daftar  -->
+	  	<div class="modal fade" id="signup" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      	<!-- Modal content-->
+		      	<div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          		<h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Daftar</h3>
+		        	</div>
+		      		
+		      		<div class="modal-body">     
+		      			<form method="POST"> 
+		        			<div class="row">
+		          				<div class="col-sm-6">
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:40px;margin-top:25px" type="text" name="user" placeholder="Fullname" required autofocus>
+		            				</div>
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="email" name="pass" placeholder="Email" required> 
+		            				</div>
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="password" name="pass" placeholder="Password" required> 
+		            				</div>
+		             				<div class="input-field col-sm-6">
+		              					<button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Daftar</button>
+		            				</div>
+		          				</div>
+		          				<div class="col-sm-6">
+		            				<a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>   daftar Dengan Facebook</a>
+		             				<a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-google-plus" aria-hidden="true"></i>   daftar Dengan Google</a>
+		             				<div style="margin-left:5px">Daftar punya akun ?</div>
+		             				<a type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-4" href="signup.html">masuk</a>
+		          				</div>
+		        			</div>
+		      			</form> 
+		      		</div>
+		     	</div>  
+		    </div>
+		</div>
+	
+		<div class="header-bottom ">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 ">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Semua</a></li>
+								<li><a href="terbaru.html">Terbaru</a></li>
+								<li><a href="populer.html">Populer</a></li>
+								<li class="dropdown"><a href="fashion.html">Fashion<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="pria.html">Pakaian Pria</a></li>
+										<li><a href="wanita.html">Pakaian Wanita</a></li>
+										<li><a href="kaoswanita.html">Kaos Wanita</a></li>
+										<li><a href="kaospria.html">Kaos Pria</a></li>
+										<li><a href="dress.html">Dress</a></li>
+										<li><a href="blazer.html">blazer</a></li>
+										<li><a href="sepatu.html">Sepatu</a></li>
+										<li><a href="flatshoes.html">Flat Shoes</a></li>
+										<li><a href="jaket.html">Jaket</a></li>
+										<li><a href="topikacamata.html">Topi & Kaca Mata</a></li>
+										<li><a href="kebaya.html">Kebaya</a></li>
+										<li><a href="rok.html">Rok & Celana</a></li>
+										<li><a href="celanapria.html">Celana Pria</a></li>
+										<li><a href="lainnyafashion.html">Lainnya</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="handphone.html">Handphone<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="tablet.html">Tablet</a></li>								
+										<li><a href="iphone.html">iPhone</a></li>
+										<li><a href="samsung.html">Samsung</a></li>
+										<li><a href="lenovo.html">Lenovo</a></li>
+										<li><a href="zenfone.html">Zenfone</a></li>
+										<li><a href="microsoft.html">Microsoft</a></li>
+										<li><a href="xiaomi.html">Xiaomi</a></li>
+										<li><a href="spareparthp.html">Sparepart & Tools HP</a></li>
+										<li><a href="smartwatch.html">Smartwatch</a></li>
+										<li><a href="powerbank.html">Power Bank</a></li>
+										<li><a href="kartuperdana.html">Kartu Perdana</a></li>
+										<li><a href="virtualreality.html">Virtual Reality</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="laptop.html">Laptop & Komputer<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="pc.html">PC</a></li>								
+										<li><a href="asus.html">ASUS</a></li>
+										<li><a href="macbook.html">Mac & Macbook</a></li>
+										<li><a href="acer.html">Acer</a></li>
+										<li><a href="lenovolaptop.html">Lenovo</a></li>
+										<li><a href="samsung-laptop.html">Samsung</a></li>
+										<li><a href="hpdell.html">HP & Dell</a></li>
+										<li><a href="sparepartlaptop.html">Sparepart & Tools Laptop</a></li>
+										<li><a href="hardware.html">Hardware</a></li>
+										<li><a href="softwareoriginal.html">Software Original</a></li>
+										<li><a href="scanner.html">Scanner</a></li>
+										<li><a href="printer.html">Printer</a></li> 
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="kamera.html">Kamera<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="actioncam.html">Action Camera</a></li>
+										<li><a href="kameradigital.html">Kamera Digital</a></li>
+										<li><a href="handycam.html">Handycam</a></li>
+										<li><a href="kameraanalog.html">Kamera Analog</a></li>
+										<li><a href="cctv.html">CCTV</a></li>
+										<li><a href="spyCam.html">Spy Cam</a></li>
+										<li><a href="lensa.html">Lensa</a></li>
+										<li><a href="flash.html">Flash</a></li>
+										<li><a href="battery.html">Battery</a></li>
+										<li><a href="filter.html">Filter</a></li>
+										<li><a href="hoodcap.html">Hood & Cap</a></li>
+										<li><a href="charger.html">Charger</a></li>
+										<li><a href="memory.html">Memory Card</a></li>
+										<li><a href="monotripod.html">Monopod, Tripod, & Rig</a></li>
+										<li><a href="converter.html">Converter & Adapter</a></li>
+										<li><a href="tascamera.html">Tas & Case</a></li>
+										<li><a href="strap.html">Strap</a></li>
+										<li><a href="studio.html">Perlengkapan Studio</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="elektronik.html" class="active">Elektronik<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="mediaplayer.html">Media Player</a></li>
+										<li><a href="setopbox.html">Set Top Box</a></li>
+										<li><a href="televisi.html">Televisi</a></li>
+										<li><a href="theater.html">Home Theater</a></li>
+										<li><a href="audioportable.html">Portable Audio Player</a></li>
+										<li><a href="headphone.html">Headphone</a></li>
+										<li><a href="speaker.html">Speaker</a></li>
+										<li><a href="proyektor.html">Proyektor</a></li>
+										<li><a href="radio.html">Radio & Tape</a></li>
+										<li><a href="baterai.html">Baterai</a></li>
+										<li><a href="gps.html">GPS</a></li>
+										<li><a href="lainnyaElektronik.html">Lainnya</a></li>
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="kecantikan.html">Kecantikan<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="perawatanwajah.html">Perawatan Wajah</a></li>
+										<li><a href="lulurmandi.html">Lulur Mandi</a></li>
+										<li><a href="makeup.html">Makeup</a></li>
+										<li><a href="perawatantubuh.html">Perawatan Tubuh</a></li>
+										<li><a href="perawatanrambut.html">Perawatan Rambut</a></li>
+										<li><a href="parfum.html">Parfum</a></li>
+										<li><a href="pelangsing.html">Pelangsing</a></li>
+										<li><a href="haircare.html">Hair Care</a></li>
+										<li><a href="lainnya-kecantikan.html">lain-lain</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="aksesoris.html">Aksesoris</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Ending header-->
+
+	<section id="advertisement">
+		<div class="container">
+			<img src="images/iklan/belanja.jpg" alt="" />
+		</div>
+	</section>
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="title text-left" style="margin-bottom: 25px; margin-top: -10px; color: #218ACB">
+						<span style="color: silver;">Kategori</span> Elektronik
+					</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Kategori</h2>
+						<div class="panel-group category-products" id="accordian">
+							<div class="panel panel-default">
+
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#fashion">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Fashion
+										</a>
+									</h4>
+								</div>
+								<div id="fashion" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="pria.html">Pakaian Pria</a></li>
+											<li><a href="wanita.html">Pakaian Wanita</a></li>
+											<li><a href="kaoswanita.html">Kaos Wanita</a></li>
+											<li><a href="kaospria.html">Kaos Pria</a></li>
+											<li><a href="dress.html">Dress</a></li>
+											<li><a href="blazer.html">blazer</a></li>
+											<li><a href="sepatu.html">Sepatu</a></li>
+											<li><a href="flatshoes.html">Flat Shoes</a></li>
+											<li><a href="jaket.html">Jaket</a></li>
+											<li><a href="topikacamata.html">Topi & Kaca Mata</a></li>
+											<li><a href="kebaya.html">Kebaya</a></li>
+											<li><a href="rok.html">Rok & Celana</a></li>
+											<li><a href="celanapria.html">Celana Pria</a></li>
+											<li><a href="lainnyafashion.html">Lainnya</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#handphone">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Handphone
+										</a>
+									</h4>
+								</div>
+								<div id="handphone" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="tablet.html">Tablet</a></li>								
+											<li><a href="iphone.html">iPhone</a></li>
+											<li><a href="samsung.html">Samsung</a></li>
+											<li><a href="lenovo.html">Lenovo</a></li>
+											<li><a href="zenfone.html">Zenfone</a></li>
+											<li><a href="microsoft.html">Microsoft</a></li>
+											<li><a href="xiaomi.html">Xiaomi</a></li>
+											<li><a href="spareparthp.html">Sparepart & Tools HP</a></li>
+											<li><a href="smartwatch.html">Smartwatch</a></li>
+											<li><a href="powerbank.html">Power Bank</a></li>
+											<li><a href="kartuperdana.html">Kartu Perdana</a></li>
+											<li><a href="virtualreality.html">Virtual Reality</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#laptop">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Laptop dan Komputer
+										</a>
+									</h4>
+								</div>
+								<div id="laptop" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="pc.html">PC</a></li>								
+											<li><a href="asus.html">ASUS</a></li>
+											<li><a href="macbook.html">Mac & Macbook</a></li>
+											<li><a href="acer.html">Acer</a></li>
+											<li><a href="lenovolaptop.html">Lenovo</a></li>
+											<li><a href="samsung-laptop.html">Samsung</a></li>
+											<li><a href="hpdell.html">HP & Dell</a></li>
+											<li><a href="sparepartlaptop.html">Sparepart & Tools Laptop</a></li>
+											<li><a href="hardware.html">Hardware</a></li>
+											<li><a href="softwareoriginal.html">Software Original</a></li>
+											<li><a href="scanner.html">Scanner</a></li>
+											<li><a href="printer.html">Printer</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#kamera">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Kamera
+										</a>
+									</h4>
+								</div>
+								<div id="kamera" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="actioncam.html">Action Camera</a></li>
+											<li><a href="kameradigital.html">Kamera Digital</a></li>
+											<li><a href="handycam.html">Handycam</a></li>
+											<li><a href="kameraanalog.html">Kamera Analog</a></li>
+											<li><a href="cctv.html">CCTV</a></li>
+											<li><a href="spyCam.html">Spy Cam</a></li>
+											<li><a href="lensa.html">Lensa</a></li>
+											<li><a href="flash.html">Flash</a></li>
+											<li><a href="battery.html">Battery</a></li>
+											<li><a href="filter.html">Filter</a></li>
+											<li><a href="hoodcap.html">Hood & Cap</a></li>
+											<li><a href="charger.html">Charger</a></li>
+											<li><a href="memory.html">Memory Card</a></li>
+											<li><a href="monotripod.html">Monopod, Tripod, & Rig</a></li>
+											<li><a href="converter.html">Converter & Adapter</a></li>
+											<li><a href="tascamera.html">Tas & Case</a></li>
+											<li><a href="strap.html">Strap</a></li>
+											<li><a href="studio.html">Perlengkapan Studio</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#elektronik">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Elektronik
+										</a>
+									</h4>
+								</div>
+								<div id="elektronik" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="mediaplayer.html">Media Player</a></li>
+											<li><a href="setopbox.html">Set Top Box</a></li>
+											<li><a href="televisi.html">Televisi</a></li>
+											<li><a href="theater.html">Home Theater</a></li>
+											<li><a href="audioportable.html">Portable Audio Player</a></li>
+											<li><a href="headphone.html">Headphone</a></li>
+											<li><a href="speaker.html">Speaker</a></li>
+											<li><a href="proyektor.html">Proyektor</a></li>
+											<li><a href="radio.html">Radio & Tape</a></li>
+											<li><a href="baterai.html">Baterai</a></li>
+											<li><a href="gps.html">GPS</a></li>
+											<li><a href="lainnyaElektronik.html">Lainnya</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#kecantikan">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Kecantikan
+										</a>
+									</h4>
+								</div>
+								<div id="kecantikan" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="perawatanwajah.html">Perawatan Wajah</a></li>
+											<li><a href="lulurmandi.html">Lulur Mandi</a></li>
+											<li><a href="makeup.html">Makeup</a></li>
+											<li><a href="perawatantubuh.html">Perawatan Tubuh</a></li>
+											<li><a href="perawatanrambut.html">Perawatan Rambut</a></li>
+											<li><a href="parfum.html">Parfum</a></li>
+											<li><a href="pelangsing.html">Pelangsing</a></li>
+											<li><a href="haircare.html">Hair Care</a></li>
+											<li><a href="lainnya-kecantikan.html">lain-lain</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="terbaru.html">Login</a></h4>
+								</div>
+							</div>
+
+						</div>
+						
+						<!-- KATEGORI BARU ATAU BEKAS -->
+						<div class="brands_products">
+							<h2>Kondisi</h2>
+							<div class="brands-name">
+								<form class="container">
+								<div class="radio">
+									<label><input type="radio" name="optradio">Baru</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio">Bekas</label>
+								</div>
+							</form>
+							</div>
+						</div>
+
+						<!-- Range Harga -->						
+						<div class="price-range">
+							<h2>Harga</h2>
+							<div class="brands-name">
+								<form class="container">
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox"> < Rp.500.000</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox"> Rp. 500.000 - Rp.1.000.000</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox"> Rp.1.000.000 - 3.000.000</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox"> Rp.3.000.000 - 10.000.000</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox"> > Rp.10.000.000</label>
+								</div>
+							</form>
+							</div>
+						</div>
+
+						<!-- Range Harga -->						
+						<div class="price-range">
+							<h2>Wilayah</h2>
+							<div class="brands-name">
+								<form class="container">
+									<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+										Pilih Wilayah/Provinsi
+										<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Nangroe Aceh Darussalam</a></li>
+											<li><a href="#">Sumatra Utara</a></li>
+											<li><a href="#">Sumatra Barat</a></li>
+											<li><a href="#">Riau</a></li>
+											<li><a href="#">Kepulauan Riau</a></li>
+											<li><a href="#">Jambi</a></li>
+											<li><a href="#">Sumatra Selatan</a></li>
+											<li><a href="#">Bangka Belitung</a></li>
+											<li><a href="#">Bengkulu</a></li>
+											<li><a href="#">Lampung</a></li>
+											<li><a href="#">Banten</a></li>
+											<li><a href="#">DKI Jakarta</a></li>
+											<li><a href="#">Jawa Barat</a></li>
+											<li><a href="#">Jawa Tengah</a></li>
+											<li><a href="#">DI Yogyakarta</a></li>
+											<li><a href="#">Jawa Timur</a></li>
+											<li><a href="#">Bali</a></li>
+											<li><a href="#">Nusa Tenggara Barat</a></li>
+											<li><a href="#">Nusa Tenggara Timur</a></li>
+											<li><a href="#">Kalimantan Timur</a></li>
+											<li><a href="#">Kalimantan Tengah</a></li>
+											<li><a href="#">Kalimantan Selatan</a></li>
+											<li><a href="#">Kalimantan Utara</a></li>
+											<li><a href="#">Kalimantan Barat</a></li>
+											<li><a href="#">Sulawesi Selatan</a></li>
+											<li><a href="#">Sulawesi Barat</a></li>
+											<li><a href="#">Sulawesi Tenggara</a></li>
+											<li><a href="#">Sulawesi Tengah</a></li>
+											<li><a href="#">Sulawesi Utara</a></li>
+											<li><a href="#">Gorontalo</a></li>
+											<li><a href="#">Maluku</a></li>
+											<li><a href="#">Maluku Utara</a></li>
+											<li><a href="#">Papua</a></li>
+											<li><a href="#">Papua Barat</a></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<!-- Range Harga -->						
+						<div class="price-range">
+							<h2>Pengiriman</h2>
+							<div class="brands-name">
+								<form class="container">
+									<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+										Pilih Jasa Pengiriman
+										<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#">JNE</a></li>
+											<li><a href="#">TIKI</a></li>
+											<li><a href="#">MEX</a></li>
+											<li><a href="#">POS Indonesia</a></li>
+											<li><a href="#">Lainnya</a></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- Iklan Space -->
+						<div class="shipping text-center">
+							<img src="images/iklan/jualan.jpg" alt="" />
+						</div>
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items">
+						<h2 class="title text-center">Home Theater</h2>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/7.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/7.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/7.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/7.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/8.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/8.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/8.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+									 
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/8.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/9.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/9.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/9.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/9.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/10.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/10.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/10.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/10.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/7.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/8.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/9.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/elektronik/10.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Nama Barang Dagangan</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Ending Produk Terbaru -->
+
+					<!-- List Page -->
+					<ul class="pagination">
+						<li class="active"><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href="">6</a></li>
+						<li><a href="">7</a></li>
+						<li><a href="">8</a></li>
+						<li><a href="">9</a></li>
+						<li><a href="">10</a></li>
+						<li><a href="">...</a></li>
+						<li><a href="">97</a></li>
+						<li><a href="">&raquo;</a></li>
+					</ul>
+					
+					<!-- Promosi Produk -->
+					<div class="recommended_items">
+						<h2 class="title text-center">DIPROMOSIKAN</h2>
+						
+						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">	
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/12.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/13.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/14.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/15.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">	
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/11.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/12.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/13.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/elektronik/14.jpeg" alt="" />
+													<h2>Rp. 150.000</h2>
+													<p>Easy Polo Black Edition</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							  </a>
+							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							  </a>			
+						</div>
+					</div><!-- ending barang di promosikan -->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--Footer-->
+	<footer id="footer">
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>WaroengKita</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Tentang Kami</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Karir</a></li>
+								<li><a href="#">Tim Kami</a></li>
+								<li><a href="#">Mitra</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Belanja</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Panduan</a></li>
+								<li><a href="#">Kenapa di kami?</a></li>
+								<li><a href="#">Cara Bayar</a></li>
+								<li><a href="#">Konfirmasi Pembayaran</a></li>
+								<li><a href="#">Refund Dana</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Jualan</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Kenapa jualan di kami?</a></li>
+								<li><a href="#">Panduan Jualan</a></li>
+								<li><a href="#">Penarikan Dana</a></li>
+								<li><a href="#">Iklan</a></li>
+								<li><a href="#">Bonus</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Bantuan</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Syarat dan Ketentuan</a></li>
+								<li><a href="#">privasi </a></li>
+								<li><a href="#">Hubungi Kami</a></li>
+								<li><a href="#">Info Lainnya</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>Download Apps</h2>
+							<div style="width: 50%;">
+								<img src="images/footer/barcode.png" class="img-responsive">
+							</div>
+							<div>
+								<a href="http://play.google.com" class="btn btn-primary fa fa-apple col-sm-5" arian-hidden="true">  iPhone</a>
+								<a href="http://play.google.com" class="btn btn-primary fa fa-android col-sm-offset-1 col-sm-5" arian-hidden="true">  Android</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright ©2016 WaroengKita | ITFestUNJ2016.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://ahmadalimuddin.alan-inc.com">WaroengKita Team</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!--End Footer-->
+
+</body>
+</html>
+

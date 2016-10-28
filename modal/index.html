@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .modal-header{
+      background-color:  #218ACB;
+    }
+    .modal-title{
+      color:white;
+      font-size:30px;
+    }
+    .modal-body{
+      background-color: white;
+    }
+    .btn{
+      background-color: #218ACB;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Masuk</h3>
+        </div>
+      <div class="modal-body">     
+      
+      <form method="POST"> 
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:35px;margin-top:25px" type="text" name="user" placeholder="Username" required autofocus>
+            </div>
+            <div class="input-field">
+              <input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:25px" type="password" name="pass" placeholder="Password" required> 
+            </div>
+            <a style="font-size:11px;margin-bottom:25px" class="modal-trigger modal-close text-blue forgot-password" href="#">Lupa kata sandi ?</a>
+             <div class="input-field col-sm-6">
+              <button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Masuk</button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>Masuk Dengan Facebook</a>
+             <a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>Masuk Dengan Google</a>
+             <div style="margin-left:5px"> Belum punya akun ?</div>
+             <a type="button"  data-toggle="modal" data-dismiss="modal" data-target="#signup" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-6" href="signup.html">Daftar</a>
+          </div>
+        </div>
+      </form> 
+      </div>
+     </div>  
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Daftar</h3>
+        </div>
+      <div class="modal-body">     
+      
+      <form method="POST"> 
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:40px;margin-top:25px" type="text" name="user" placeholder="Fullname" required autofocus>
+            </div>
+            <div class="input-field">
+              <input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="email" name="pass" placeholder="Email" required> 
+            </div>
+            <div class="input-field">
+              <input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="password" name="pass" placeholder="Password" required> 
+            </div>
+             <div class="input-field col-sm-6">
+              <button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Daftar</button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>daftar Dengan Facebook</a>
+             <a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>daftar Dengan Google</a>
+             <div style="margin-left:5px">Daftar punya akun ?</div>
+             <a type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-4" href="signup.html">masuk</a>
+          </div>
+        </div>
+      </form> 
+      </div>
+     </div>  
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
+

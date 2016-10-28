@@ -1,0 +1,14 @@
+.modal-header{
+      background-color:  #218ACB;
+    }
+    .modal-title{
+      color:white;
+      font-size:30px;
+    }
+    .modal-body{
+      background-color: white;
+    }
+    .btn{
+      background-color: #218ACB;
+      color:white;
+    }

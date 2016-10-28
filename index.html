@@ -1,0 +1,3153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="@ahmadalimuddin, @singgihprasetyo, @ilafirsta, @radeenisuum">
+	<meta name="keywords" content="Waroeng Kita, terbaru dan terbesar di Indonesia. Siap memanjakan penjual dan pembeli dengan berbagai kebutuhan yang diinginkan. " />
+    <title>WaroengKita | IT Fest UNJ 2016</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+   	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	<header id="header">
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+					</div>
+
+					<div class="col-sm-7">
+						<div class="search_box pull-left col-sm-12">
+							<input type="text" style="width: 100%; border-bottom: 1px solid #218ACB;" placeholder="Cari Produk atau Barang"/>
+						</div>
+					</div>
+
+					<div class="col-sm-2">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="masuk.html" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i>Masuk</a></li>
+								<li><a href="daftar.html" data-toggle="modal" data-target="#signup"><i class="fa fa-user"></i>Daftar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Masuk -->
+	  	<div class="modal fade" id="myModal" role="dialog">
+	    	<div class="modal-dialog ">
+	    
+		      	<!-- Modal content-->
+		      	<div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          		<h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Masuk</h3>
+		        	</div>
+		      		<div class="modal-body">     
+				      	<form method="POST"> 
+				        	<div class="row">
+				          		<div class="col-sm-6">
+				            		<div class="input-field">
+				              			<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:35px;margin-top:25px" type="text" name="user" placeholder="Username" required autofocus>
+			            			</div>
+			            			<div class="input-field">
+			              				<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:25px" type="password" name="pass" placeholder="Password" required> 
+			            			</div>
+			            			<a style="font-size:11px;margin-bottom:25px" class="modal-trigger modal-close text-blue forgot-password" href="#">Lupa kata sandi ?</a>
+			             			<div class="input-field col-sm-6">
+			              				<button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Masuk</button>
+			            			</div>
+			          			</div>
+			          			<div class="col-sm-6">
+			            			<a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>   Masuk Dengan Facebook</a>
+			             			<a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-google-plus" aria-hidden="true"></i>   Masuk Dengan Google</a>
+			             			
+			             			<div style="margin-left:5px"> Belum punya akun ?</div>
+			             			
+			             			<a type="button"  data-toggle="modal" data-dismiss="modal" data-target="#signup" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-6" href="signup.html">Daftar</a>
+			          			</div>
+			        		</div>
+			      		</form> 
+		      		</div>
+		     	</div>  
+		    </div>
+	  	</div>
+
+	  	<!-- Modal Daftar  -->
+	  	<div class="modal fade" id="signup" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      	<!-- Modal content-->
+		      	<div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          		<h3 class="modal-title" style="text-align:left;text-transform: uppercase;">Daftar</h3>
+		        	</div>
+		      		
+		      		<div class="modal-body">     
+		      			<form method="POST"> 
+		        			<div class="row">
+		          				<div class="col-sm-6">
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:40px;margin-top:25px" type="text" name="user" placeholder="Fullname" required autofocus>
+		            				</div>
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="email" name="pass" placeholder="Email" required> 
+		            				</div>
+		            				<div class="input-field">
+		              					<input class="col-sm-12" style="border:none;border-radius: none;outline: none;border-bottom: 1px solid #218ACB;margin-bottom:30px" type="password" name="pass" placeholder="Password" required> 
+		            				</div>
+		             				<div class="input-field col-sm-6">
+		              					<button style="margin-bottom:25px;text-transform: uppercase;" class="btn btn-block" type="submit">Daftar</button>
+		            				</div>
+		          				</div>
+		          				<div class="col-sm-6">
+		            				<a style="margin:5px;background-color: #4286c1;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-facebook" aria-hidden="true"></i>   daftar Dengan Facebook</a>
+		             				<a style="margin:5px;background-color: #ef5350;text-transform: uppercase;" class="btn col-sm-12" href="signup.html"><i class="fa fa-google-plus" aria-hidden="true"></i>   daftar Dengan Google</a>
+		             				<div style="margin-left:5px">Daftar punya akun ?</div>
+		             				<a type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal" style="margin:5px;background-color:#ebaf1a;text-transform: uppercase;" class="btn col-sm-4" href="signup.html">masuk</a>
+		          				</div>
+		        			</div>
+		      			</form> 
+		      		</div>
+		     	</div>  
+		    </div>
+		</div>
+	
+		<div class="header-bottom ">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 ">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Semua</a></li>
+								<li><a href="terbaru.html">Terbaru</a></li>
+								<li><a href="populer.html">Populer</a></li>
+								<li class="dropdown"><a href="fashion.html">Fashion<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="pria.html">Pakaian Pria</a></li>
+										<li><a href="wanita.html">Pakaian Wanita</a></li>
+										<li><a href="kaoswanita.html">Kaos Wanita</a></li>
+										<li><a href="kaospria.html">Kaos Pria</a></li>
+										<li><a href="dress.html">Dress</a></li>
+										<li><a href="blazer.html">blazer</a></li>
+										<li><a href="sepatu.html">Sepatu</a></li>
+										<li><a href="flatshoes.html">Flat Shoes</a></li>
+										<li><a href="jaket.html">Jaket</a></li>
+										<li><a href="topikacamata.html">Topi & Kaca Mata</a></li>
+										<li><a href="kebaya.html">Kebaya</a></li>
+										<li><a href="rok.html">Rok & Celana</a></li>
+										<li><a href="celanapria.html">Celana Pria</a></li>
+										<li><a href="lainnyafashion.html">Lainnya</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="handphone.html">Handphone<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="tablet.html">Tablet</a></li>								
+										<li><a href="iphone.html">iPhone</a></li>
+										<li><a href="samsung.html">Samsung</a></li>
+										<li><a href="lenovo.html">Lenovo</a></li>
+										<li><a href="zenfone.html">Zenfone</a></li>
+										<li><a href="microsoft.html">Microsoft</a></li>
+										<li><a href="xiaomi.html">Xiaomi</a></li>
+										<li><a href="spareparthp.html">Sparepart & Tools HP</a></li>
+										<li><a href="smartwatch.html">Smartwatch</a></li>
+										<li><a href="powerbank.html">Power Bank</a></li>
+										<li><a href="kartuperdana.html">Kartu Perdana</a></li>
+										<li><a href="virtualreality.html">Virtual Reality</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="laptop.html">Laptop & Komputer<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="pc.html">PC</a></li>								
+										<li><a href="asus.html">ASUS</a></li>
+										<li><a href="macbook.html">Mac & Macbook</a></li>
+										<li><a href="acer.html">Acer</a></li>
+										<li><a href="lenovolaptop.html">Lenovo</a></li>
+										<li><a href="samsung-laptop.html">Samsung</a></li>
+										<li><a href="hpdell.html">HP & Dell</a></li>
+										<li><a href="sparepartlaptop.html">Sparepart & Tools Laptop</a></li>
+										<li><a href="hardware.html">Hardware</a></li>
+										<li><a href="softwareoriginal.html">Software Original</a></li>
+										<li><a href="scanner.html">Scanner</a></li>
+										<li><a href="printer.html">Printer</a></li> 
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="kamera.html">Kamera<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="actioncam.html">Action Camera</a></li>
+										<li><a href="kameradigital.html">Kamera Digital</a></li>
+										<li><a href="handycam.html">Handycam</a></li>
+										<li><a href="kameraanalog.html">Kamera Analog</a></li>
+										<li><a href="cctv.html">CCTV</a></li>
+										<li><a href="spyCam.html">Spy Cam</a></li>
+										<li><a href="lensa.html">Lensa</a></li>
+										<li><a href="flash.html">Flash</a></li>
+										<li><a href="battery.html">Battery</a></li>
+										<li><a href="filter.html">Filter</a></li>
+										<li><a href="hoodcap.html">Hood & Cap</a></li>
+										<li><a href="charger.html">Charger</a></li>
+										<li><a href="memory.html">Memory Card</a></li>
+										<li><a href="monotripod.html">Monopod, Tripod, & Rig</a></li>
+										<li><a href="converter.html">Converter & Adapter</a></li>
+										<li><a href="tascamera.html">Tas & Case</a></li>
+										<li><a href="strap.html">Strap</a></li>
+										<li><a href="studio.html">Perlengkapan Studio</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="dropdown"><a href="elektronik.html">Elektronik<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="mediaplayer.html">Media Player</a></li>
+										<li><a href="setopbox.html">Set Top Box</a></li>
+										<li><a href="televisi.html">Televisi</a></li>
+										<li><a href="theater.html">Home Theater</a></li>
+										<li><a href="audioportable.html">Portable Audio Player</a></li>
+										<li><a href="headphone.html">Headphone</a></li>
+										<li><a href="speaker.html">Speaker</a></li>
+										<li><a href="proyektor.html">Proyektor</a></li>
+										<li><a href="radio.html">Radio & Tape</a></li>
+										<li><a href="baterai.html">Baterai</a></li>
+										<li><a href="gps.html">GPS</a></li>
+										<li><a href="lainnyaElektronik.html">Lainnya</a></li>
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="kecantikan.html">Kecantikan<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="perawatanwajah.html">Perawatan Wajah</a></li>
+										<li><a href="lulurmandi.html">Lulur Mandi</a></li>
+										<li><a href="makeup.html">Makeup</a></li>
+										<li><a href="perawatantubuh.html">Perawatan Tubuh</a></li>
+										<li><a href="perawatanrambut.html">Perawatan Rambut</a></li>
+										<li><a href="parfum.html">Parfum</a></li>
+										<li><a href="pelangsing.html">Pelangsing</a></li>
+										<li><a href="haircare.html">Hair Care</a></li>
+										<li><a href="lainnya-kecantikan.html">lain-lain</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="aksesoris.html">Aksesoris</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--slider-->
+	<section id="slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>Waroeng</span>Kita</h1>
+									<h2>1 Waroeng Untuk Semua Pengusaha</h2>
+									<p>Hanya di <span>Waroeng Kita</span> untuk mencari barang murah dengan kualitas terpercaya. </p>
+									<a href="daftar.html" type="button" class="btn btn-default get">Gabung WK</a>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/slider/model-1.jpg" class="girl img-responsive" alt="" />
+									<img src="images/slider/palingMurah.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>Waroeng</span>Kita</h1>
+									<h2>Sudah Buka Waroeng Kita belum???</h2>
+									<p>Hanya di <span>Waroeng Kita</span> untuk mencari barang murah dengan kualitas terpercaya. </p>
+									<a href="daftar.html" type="button" class="btn btn-default get">Gabung WK</a>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/slider/model-4.jpg" class="girl img-responsive" alt="" />
+									<!-- <img src="images/slider/palingMurah.png"  class="pricing" alt="" /> -->
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>Waroeng</span>Kita</h1>
+									<h2>Belanja Apa saja, Ada!!!</h2>
+									<p>Hanya di <span>Waroeng Kita</span> untuk mencari barang murah dengan kualitas terpercaya. </p>
+									<a href="daftar.html" type="button" class="btn btn-default get">Gabung WK</a>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/slider/model-3.jpg" class="girl img-responsive" alt="" />
+									<img src="images/slider/palingMurah.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Iklan Space -->
+	<section id="advertisement">
+		<div class="container">
+			<img src="images/iklan/belanja.jpg" alt="" />
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12 padding-right">
+					<div class="features_items">
+						<h2 class="title text-center">Produk Populer</h2>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/asus/1.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Asus XIIXCD</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/lenovo/3.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Lenovo Fade to Black</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/mac/4.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Macbook Water</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/printer/3.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Canon LP212 Printing</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-offset-4 col-sm-4">
+							<a href="populer.html" class="btn btn-primary col-sm-12" style="margin-bottom: 25px; margin-top: -10px; border: 1px solid #e6e6e6; background-color: #F2F2F2; color: #218ACB"><span class="fa fa-mail-forward"></span> Lihat Semua </a>
+						</div>
+					</div>
+
+					<div class="features_items">
+						<h2 class="title text-center">Produk Terbaru</h2>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/asus/1.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Asus XIIXCD</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/lenovo/3.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Lenovo Fade to Black</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/mac/4.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Macbook Water</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<a href="detailbarang.html"><img src="images/laptop/printer/3.jpg" alt="" /></a>
+										<h2>Rp. 150.000</h2>
+										<p href="detailbarang.html">Canon LP212 Printing</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-offset-4 col-sm-4">
+							<a href="terbaru.html" class="btn btn-primary col-sm-12" style="margin-bottom: 25px; margin-top: -10px; border: 1px solid #e6e6e6; background-color: #F2F2F2; color: #218ACB"><span class="fa fa-mail-forward"></span> Lihat Semua </a>
+						</div>
+					</div>
+					
+					<!-- Fashion Kategory -->
+					<h2 class="title text-center">Fashion</h2>
+
+					<div class="category-tab">
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#pakaian" data-toggle="tab">Pakaian</a></li>
+								<li><a href="#kaos" data-toggle="tab">Kaos</a></li>
+								<li><a href="#dress" data-toggle="tab">Dress</a></li>
+								<li><a href="#blazer" data-toggle="tab">Blazer</a></li>
+								<li><a href="#flatshoes" data-toggle="tab">Flat Shoes</a></li>
+								<li><a href="#jaket" data-toggle="tab">Jaket</a></li>
+								<li><a href="#topikacamata" data-toggle="tab">Topi & Kacamata</a></li>
+								<li><a href="#kebaya" data-toggle="tab">Kebaya</a></li>
+								<li><a href="#rokcelana" data-toggle="tab">Rok & Celana</a></li>
+								<li><a href="#celanapria" data-toggle="tab">Celana Pria</a></li>
+								<li><a href="#lainnya" data-toggle="tab">Lainnya</a></li>
+							</ul>
+						</div>
+
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="pakaian" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Putih</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Hitam</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Putih</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Hitam</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Wanita Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="kaos" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/wanita/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pria/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Putih</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pria/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Hitam</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/wanita/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Putih</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pria/12.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Pria Hitam</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/wanita/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Pakaian Wanita Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<div class="tab-pane fade" id="dress" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/9.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/6.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/dress/7.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Dress Wanita Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="blazer">
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cowok Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cowok Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cowok Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cowok Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cowok Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/pakaian/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Blazer Cewek Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="tab-pane fade" id="flatshoes" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Flatshoes Bata Cantik </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Flatshoes</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Flatshoes</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Flatshoes Bata Cantik </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Flatshoes</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/flatshoes/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Flatshoes</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="jaket" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Bata Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Jacket</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Bata Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Jacket</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="topikacamata" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kacamata/8.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Bata Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/topi/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Jacket</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/topi/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/topi/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Bata Cantik</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/topi/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>New Era Jacket</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/topi/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Jaket Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="kebaya" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="rokcelana" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="celanapria" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/6.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/7.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/7.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="lainnya" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/jaket/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kebaya/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/celana/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/fashion/kacamata/10.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Kebaya Keren</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- fashion ending -->
+
+					<!-- Handphone Kategory -->
+					<h2 class="title text-center">Handphone</h2>
+
+					<div class="category-tab">
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tablet" data-toggle="tab">Tablet</a></li>
+								<li><a href="#iphone" data-toggle="tab">iPhone</a></li>
+								<li><a href="#samsung" data-toggle="tab">Samsung</a></li>
+								<li><a href="#lenovo" data-toggle="tab">Lenovo</a></li>
+								<li><a href="#zenfone" data-toggle="tab">Zenfone</a></li>
+								<li><a href="#microsoft" data-toggle="tab">Microsoft</a></li>
+								<li><a href="#xiaomi" data-toggle="tab">Xiaomi</a></li>
+								<li><a href="#spareparthandphone" data-toggle="tab">Sparepart & Tools</a></li>
+								<li><a href="#smartwatch" data-toggle="tab">Smartwatch</a></li>
+								<li><a href="#powerbank" data-toggle="tab">Power Bank</a></li>
+								<li><a href="#virtualreality" data-toggle="tab">VR</a></li>
+							</ul>
+						</div>
+
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="tablet" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/tablet/Tab4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="iphone" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/iphone/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>		
+							</div>
+
+							<div class="tab-pane fade" id="samsung" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/samsung/Samsung3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Samsung Galaxy</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="lenovo">
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/lenovo/lenovo3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="zenfone" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/zenfone/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="microsoft" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/microsoft/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="xiaomi" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/xiaomi/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="spareparthandphone" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/sparepart/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="smartwatch" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/smartwatch/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="powerbank" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/powerbank/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="virtualreality" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/handphone/vr/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- hanphone ending -->
+
+					<!-- Laptop dan Komputer Category -->
+					<h2 class="title text-center">Laptop & Komputer</h2>
+
+					<div class="category-tab">
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#laptop" data-toggle="tab">Laptop</a></li>
+								<li><a href="#sparepartlaptop" data-toggle="tab">Sparepart & Tools Laptop</a></li>
+								<li><a href="#hardware" data-toggle="tab">hardware</a></li>
+								<li><a href="#software" data-toggle="tab">Software</a></li>
+								<li><a href="#printerscanner" data-toggle="tab">Printer & Scanner</a></li>
+							</ul>
+						</div>
+
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="laptop" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/asus/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/lenovo/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/samsung/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/dell/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/acer/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/mac/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<div class="tab-pane fade" id="sparepartlaptop" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/sparepart/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="hardware" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/hardware/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="software" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/software/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="printerscanner" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/scanner/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/printer/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/scanner/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/printer/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/scanner/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/laptop/printer/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- Laptop dan Komputer ending -->
+
+					<!-- Kamera Category -->
+					<h2 class="title text-center">Kamera Digital</h2>
+
+					<div class="category-tab">
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#actioncamera" data-toggle="tab">Action Camera</a></li>
+								<li><a href="#dslr" data-toggle="tab">DSLR</a></li>
+								<li><a href="#handycam" data-toggle="tab">Handycam</a></li>
+								<li><a href="#cctv" data-toggle="tab">cctv</a></li>
+								<li><a href="#studio" data-toggle="tab">Perlengkapan Studio</a></li>
+								<li><a href="#kameraanalog" data-toggle="tab">Kamera Analog</a></li>
+							</ul>
+						</div>
+
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="actioncamera" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/actioncamera/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="dslr" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/dslr/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<div class="tab-pane fade" id="handycam" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/handycam/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="cctv" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/cctv/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="studio" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/perlengkapanstudio/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="kameraanalog" >
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/1.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/2.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/4.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/3.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<a href="detailbarang.html"><img src="images/kamera/analog/5.jpg" alt="" /></a>
+												<h2>Rp. 150.000</h2>
+												<p>Nama Barang Dagangan</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Beli Barang</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- Kamera Ending -->					
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--Footer-->
+	<footer id="footer">
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>WaroengKita</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Tentang Kami</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Karir</a></li>
+								<li><a href="#">Tim Kami</a></li>
+								<li><a href="#">Mitra</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Belanja</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Panduan</a></li>
+								<li><a href="#">Kenapa di kami?</a></li>
+								<li><a href="#">Cara Bayar</a></li>
+								<li><a href="#">Konfirmasi Pembayaran</a></li>
+								<li><a href="#">Refund Dana</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Jualan</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Kenapa jualan di kami?</a></li>
+								<li><a href="#">Panduan Jualan</a></li>
+								<li><a href="#">Penarikan Dana</a></li>
+								<li><a href="#">Iklan</a></li>
+								<li><a href="#">Bonus</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Bantuan</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Syarat dan Ketentuan</a></li>
+								<li><a href="#">privasi </a></li>
+								<li><a href="#">Hubungi Kami</a></li>
+								<li><a href="#">Info Lainnya</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>Download Apps</h2>
+							<div style="width: 50%;">
+								<img src="images/footer/barcode.png" class="img-responsive">
+							</div>
+							<div>
+								<a href="http://play.google.com" class="btn btn-primary fa fa-apple col-sm-5" arian-hidden="true">  iPhone</a>
+								<a href="http://play.google.com" class="btn btn-primary fa fa-android col-sm-offset-1 col-sm-5" arian-hidden="true">  Android</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright ©2016 WaroengKita | ITFestUNJ2016.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://ahmadalimuddin.alan-inc.com">WaroengKita Team</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!--/Footer-->
+
+</body>
+</html>
